@@ -15,7 +15,8 @@
         <div>
             <p>
                 <label for="email">Email</label>
-                <input id="email" type="email" name="email-address" placeholder="name@domain.com" required>
+                <input onfocusout="emailInput()" id="email" type="email" name="email-address" placeholder="name@domain.com" required>
+                <p class="error" id="emailError"></p>
             </p>
         </div>
         <div>      
