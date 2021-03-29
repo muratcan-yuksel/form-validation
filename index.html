@@ -40,13 +40,16 @@
         <div>
             <p>
         <label for ="password">Password</label>
-        <input type="text" name="password" required>
-            </p>
+        <input  class="password" id="pass" type="text" name="password" minlength="=6" placeholder="min 6 characters" required>
+        <p class="error" id="passError1"></p>   
+        </p>
         </div>
         <div>
             <p>
         <label for ="confirmation">Confirm Password</label>
-        <input type="text" name="confirmation" required>
+        <input onfocusout="passInput()" class="password" id="pass2" type="text" name="confirmation" minlength="=6" required>
+        <p class="error" id="passError2"></p>   
+
             </p>
         </div>
         <button>Submit</button>

@@ -34,3 +34,17 @@ function zipInput() {
     error.textContent = "";
   }
 }
+
+function passInput() {
+  //get the first pass
+  const pass1 = document.getElementById("pass");
+  //get the 2nd pass
+  const pass2 = document.getElementById("pass2");
+  //get the first error Para
+  const error1 = document.getElementById("passError1");
+  //get the 2nd error para
+  const error2 = document.getElementById("passError2");
+  if (pass1.value != pass2.value) {
+    error2.textContent = "Your passwords don't match!";
+  }
+}
