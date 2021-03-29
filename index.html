@@ -22,7 +22,8 @@
         <div>      
             <p>
                 <label for="number">Zip Code</label>
-                <input type="number" name="code" required>
+                <input onfocusout="zipInput()" id="zip" type="number" name="code"  required>
+                <p class="error" id="zipError"></p>
             </p>
         </div>
         <div>
