@@ -4,22 +4,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>username</p>
-    <input type="text" name="username">
-    <p>email</p>
-    <input type="email" name="email-address" placeholder="name@domain.com" required>
-    <p>zip code</p>
-    <input type="number" name="cost">
-    <p>country</p>
-    <select name="day">
-        <option value="Friday" selected>Friday</option>
-        <option value="Saturday">Saturday</option>
-        <option value="Sunday">Sunday</option>
-    </select>
-    <p>password</p>
-    <input type="text" name="username">
-    <p>pass confirmation</p>
-    <input type="text" name="username">
+    <form>  
+        <div>
+            <p>
+                <label for="userName">User Name</label>
+                <input id="userName" type="text" name="username" placeholder="minimum 5 characters" minlength="5" required>
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email-address" placeholder="name@domain.com" required>
+            </p>
+        </div>
+        <div>      
+            <p>
+                <label for="number">Zip Code</label>
+                <input type="number" name="code" required>
+            </p>
+        </div>
+        <div>
+            <p>
+        <label for="country">Select Country</label>
+        <!-- required didn't work for the following one -->
+        <select id="country" name="country" required>
+            <option value="France" selected>France</option>
+            <option value="The-Netherlands">The Netherlands</option>
+            <option value="Other">Other</option>
+        </select>
+            </p>
+        </div>
+        <div>
+            <p>
+        <label for ="password">Password</label>
+        <input type="text" name="password" required>
+            </p>
+        </div>
+        <div>
+            <p>
+        <label for ="confirmation">Confirm Password</label>
+        <input type="text" name="confirmation" required>
+            </p>
+        </div>
+        <button>Submit</button>
+    </form>
+
 
 
     <script src="app.js"></script>
