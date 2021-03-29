@@ -48,3 +48,14 @@ function passInput() {
     error2.textContent = "Your passwords don't match!";
   }
 }
+//function for the submit button
+//get the button
+const submitButton = document.getElementById("submit");
+submitButton.addEventListener("click", function (e) {
+  userInput();
+  emailInput();
+  zipInput();
+  passInput();
+  const error = document.getElementById("submitError");
+  error.textContent = "Please fill all the necessary fields correctly";
+});
