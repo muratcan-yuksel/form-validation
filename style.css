@@ -8,3 +8,7 @@ input:focus:invalid {
 #email:focus {
 	background-color: blue;
 }
+.error {
+	font-size: 0.8em;
+	color: rgb(214, 34, 34);
+}

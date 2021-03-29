@@ -8,7 +8,8 @@
         <div>
             <p>
                 <label for="userName">User Name</label>
-                <input id="userName" type="text" name="username" placeholder="minimum 5 characters" minlength="5" required>
+                <input  onfocusout="userInput()" id="userName" type="text" name="username" placeholder="min 5 max 15 characters" minlength="5" required>
+                <p class="error" id="userError"></p>
             </p>
         </div>
         <div>
